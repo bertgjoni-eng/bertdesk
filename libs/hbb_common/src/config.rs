@@ -156,7 +156,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["82.165.20.46"];
+pub const RENDEZVOUS_SERVERS: &[&str] = &["desk.bertcloud.eu"];
 pub const RS_PUB_KEY: &str = "bGiMEFwkkOhKQa8bkvsnhhQCLmOenfr6RxJVvsbPBsk=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
