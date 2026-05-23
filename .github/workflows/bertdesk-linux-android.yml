@@ -385,7 +385,7 @@ jobs:
             export CARGO_INCREMENTAL=0
             export DEB_ARCH=${{ matrix.job.deb_arch }}
             python3 ./build.py --flutter --skip-cargo
-            for name in rustdesk*??.deb; do
+            for name in bertdesk*??.deb; do
               mv "$name" "${name%%.deb}-${{ matrix.job.arch }}.deb"
             done
 
@@ -393,4 +393,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: bertdesk-linux-${{ matrix.job.arch }}-deb
-          path: rustdesk-*.deb
+          path: bertdesk-*.deb

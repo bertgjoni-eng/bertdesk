@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=BertDesk
+NoDisplay=true
+MimeType=x-scheme-handler/bertdesk;
+TryExec=bertdesk
+Exec=bertdesk %u
+Icon=bertdesk
+Terminal=false
+Type=Application
+StartupNotify=false
+StartupWMClass=bertdesk
