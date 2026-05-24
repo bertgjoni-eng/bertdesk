@@ -1047,6 +1047,8 @@ impl Config {
                 for x in &ma.bytes()[2..] {
                     id = (id << 8) | (*x as u32);
                 }
+                // BertDesk: salt l'ID per non coincidere con RustDesk sulla stessa macchina
+                id ^= 0xBED0DE50;
                 id &= 0x1FFFFFFF;
                 log::info!("Generated id {}", id);
                 Some(id.to_string())
