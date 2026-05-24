@@ -43,6 +43,10 @@
 	<string>MainMenu</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Record the sound from microphone for the purpose of the remote desktop.</string>
+	<key>NSScreenCaptureUsageDescription</key>
+	<string>BertDesk needs Screen Recording to share this Mac's desktop with a remote computer.</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>BertDesk uses AppleScript to install the background service.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
     <key>LSUIElement</key>
