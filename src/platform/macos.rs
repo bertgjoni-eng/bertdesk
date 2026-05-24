@@ -307,6 +307,10 @@ fn correct_app_name(s: &str) -> String {
     if let Some(bundleid) = get_bundle_id() {
         s = s.replace("com.carriez.rustdesk", &bundleid);
     }
+    // BertDesk: anche il Label dei plist (es. com.carriez.RustDesk_service) deve usare
+    // il prefisso del bundle id, altrimenti il file installato non corrisponde a quello
+    // cercato da is_installed_daemon (che usa get_full_name()).
+    s = s.replace("com.carriez.RustDesk", &crate::get_full_name());
     s = s.replace("rustdesk", &crate::get_app_name().to_lowercase());
     s = s.replace("RustDesk", &crate::get_app_name());
     s
